@@ -10,9 +10,6 @@
 
 package com.school;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("--- School Attendance System ---");
@@ -38,19 +35,6 @@ public class Main {
             if (course != null) course.displayDetails();
         }
 
-        // Attendance recording
-        List<AttendanceRecord> attendanceLog = new ArrayList<>();
-
-        attendanceLog.add(new AttendanceRecord(students[0].getStudentId(), courses[0].getCourseId(), "Present"));
-        attendanceLog.add(new AttendanceRecord(students[1].getStudentId(), courses[1].getCourseId(), "Absent"));
-        attendanceLog.add(new AttendanceRecord(students[2].getStudentId(), courses[2].getCourseId(), "present")); // case-insensitive test
-        attendanceLog.add(new AttendanceRecord(students[3].getStudentId(), courses[0].getCourseId(), "Late")); // invalid status test
-
-        System.out.println("\nAttendance Records:");
-        for (AttendanceRecord record : attendanceLog) {
-            record.displayRecord();
-        }
-
-        System.out.println("\nSession 4: Attendance Recording and Validation Complete");
+        System.out.println("\nSession 2: Core Domain Modelling Complete");
     }
 }
